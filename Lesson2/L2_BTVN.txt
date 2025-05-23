@@ -1,0 +1,21 @@
+Ğây là BTVN c?a cháu ?!
+import random
+def game_vui():
+  b = random.randrange(1,101,1)
+  c = 0
+  while True:
+    a = int(input("What is your guess? "))
+    print ('''
+    ''')
+    if a == b:
+      print ("????")  
+      print ("The times you have tried is",c)
+      print ("The number is",b)
+      break
+    if a > b:
+      c = c+1
+      print ("The number is smaller.")
+    if b > a:
+      c = c+1
+      print ("The number is larger.")
+game_vui()
